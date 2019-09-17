@@ -1,0 +1,325 @@
+t/*----- CUSTOM CSS ------
+@Author: Avijit Roy Kabyo
+@Domain: avijitroy.com
+@Email: mail@avijitroy.com
+--------------------------*/
+
+h1 {
+    color: white;
+}
+h2 {
+    color: green;
+    text-align: center;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 230px;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+label {
+    width: 10em;
+    float: left;
+    padding-right: 1em;
+    padding-bottom: .5em;
+    text-align: right;
+}
+input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+.bottom {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.form {
+    margin: 0 auto;
+}
+#data span {
+    padding-left: .25em;
+}
+#submit {
+    font-size: 24px;
+    width: 200px;
+    height: 50px;
+}
+
+#submit:hover {
+    background-color: black; 
+    color: white;
+}
+#reset {
+    background-color: #718fa2;
+    width: 50%;
+    height: 30px;
+    border-radius: 25px;
+}
+
+#output {
+    border: 1px solid grey;
+    margin: 0 auto;
+    width: 300px;
+    padding: 20px;
+}
+.result table {
+    border-collapse: collapse;
+}
+.result th,
+.result td {
+    text-align: left;
+    padding: 8px;
+}
+.result th {
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    border-bottom: 4px solid black;
+}
+.result tr:nth-child(even) {
+    background-color: #ebf0fa;
+}
+/* --- Select Option Styling Start Here --- */
+
+div {
+    margin: 20px;
+}
+/* -------------------- Select Box Styles: bavotasan.com Method (with special adaptations by ericrasch.com) */
+/* -------------------- Source: http://bavotasan.com/2011/style-select-box-using-only-css/ 
+
+.styled-select {
+    background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 100;
+    height: 24px;
+    overflow: hidden;
+    /*width: 240px;
+    
+    border: 1px black solid;
+}
+/*------ new --*/
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+.article {
+    text-align: left;
+}
+header {
+    background: #263850;
+    color: white;
+}
+footer {
+    background: #263850;
+    color: white;
+}
+.nav {
+    background: #eee;
+}
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+@media all and (min-width: 768px) {
+    .nav {
+        text-align: left;
+        -webkit-flex: 1 auto;
+        flex: 1 auto;
+        -webkit-order: 1;
+        order: 1;
+    }
+    .main {
+        -webkit-flex: 5 0px;
+        flex: 5 0px;
+        -webkit-order: 2;
+        order: 2;
+    }
+    footer {
+        -webkit-order: 3;
+        order: 3;
+    }
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #263850;
+    border: 1px solid #555;
+}
+li a {
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+li:last-child {
+    border-bottom: none;
+}
+li a.active {
+    background-color: #263850;
+    color: #02c1de;
+}
+li a:hover:not(.active) {
+    background-color: #314968;
+    color: white;
+}
+input {
+    width: 200px;
+    height: 75px
+    -webkit-box-shadow: offset 0 0 10px #000;
+    -moz-box-shadow: offset 0 0 10px #000;
+    box-shadow: offset 0 0 10px #000;
+    background: transparent;
+}
+
+input[type=text] {
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 4px;
+    font-size:24px;
+
+}
+
+input[type=number] {
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 4px;
+    font-size:24px;
+
+}
+
+#design{
+    
+    width: 200px;
+    height: 50px;
+}
+#design2{
+    
+    width: 200px;
+    height: 50px;
+}
+#design3{
+    
+    width: 200px;
+    height: 50px;
+}
+
+#dolly{
+    
+    width: 250px;
+    height: 50px;
+}
+
+textarea {
+    width: 50%;
+    height: 100px;
+    -webkit-box-shadow: offset 0 0 10px #000;
+    -moz-box-shadow: offset 0 0 10px #000;
+    box-shadow: offset 0 0 10px #000;
+    background: transparent;
+}
+#update{
+	border: 2px solid;
+	padding: 5px;
+	background-color: beige;
+}
+
+.search{
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #008CBA; 
+    color: white; 
+    border: 2px solid #008CBA;
+}
+
+.search:hover {
+    background-color: white;
+    color: black;
+}
+
+.info{
+    margin: 0 35% 0 35%;
+    border: solid black 2px;
+    background-color: beige;
+    
+}
+
+.v{
+    font-size: 24px;
+    text-align: center;
+    width: 250px;
+    
+}
+
+.v option{
+    width: 250px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bolder;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s
+}
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
